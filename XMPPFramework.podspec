@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'XMPPFramework'
-  s.version = '4.0.0'
+  s.version = '4.0.1'
 
   s.osx.deployment_target = '10.9'
   s.ios.deployment_target = '8.0'
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.subspec 'default' do |ss|
 	  ss.source_files = ['Core/**/*.{h,m}',
 	                    'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}',
-	                    'Utilities/**/*.{h,m}', 'Extensions/**/*.{h,m}']
+	                    'Utilities/**/*.{h,m}', 'Extensions/**/*.{h,m}','Features/**/*.{h,m}']
 	  ss.ios.exclude_files = 'Extensions/SystemInputActivityMonitor/**/*.{h,m}'
 	  ss.libraries = 'xml2', 'resolv'
 	  ss.frameworks = 'CoreData', 'SystemConfiguration', 'CoreLocation'

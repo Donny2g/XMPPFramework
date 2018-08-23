@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class XMPPElement;
 @class XMPPElementReceipt;
 @protocol XMPPStreamDelegate;
+@protocol XMPPStreamPreprocessor;
+@protocol XMPPElementHandler;
 
 #if TARGET_OS_IPHONE
   #define MIN_KEEPALIVE_INTERVAL      20.0 // 20 Seconds
