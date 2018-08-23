@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class XMPPFeature;
 @class XMPPSRVResolver;
 @class XMPPParser;
 @class XMPPJID;
