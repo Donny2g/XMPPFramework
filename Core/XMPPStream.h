@@ -580,6 +580,17 @@ extern const NSTimeInterval XMPPStreamTimeoutNone;
 
 - (BOOL)supportsCompressionMethod:(NSString *)compressionMethod;
 
+#pragma mark Feature
+/**
+ *
+ **/
+- (void)addFeature:(XMPPFeature *)feature;
+- (void)removeFeature:(XMPPFeature *)feature;
+- (void)addStreamPreprocessor:(id<XMPPStreamPreprocessor>)preprocessor;
+- (void)removeStreamPreprocessor:(id<XMPPStreamPreprocessor>)preprocessor;
+- (void)addElementHandler:(id<XMPPElementHandler>)handler;
+- (void)removeElementHandler:(id<XMPPElementHandler>)handler;
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark Server Info
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
