@@ -145,9 +145,10 @@ static NSString * const XMPPCompressionProtocolNS = @"http://jabber.org/protocol
 {
     XMPPLogTrace();
     //Using TLS is the first choice
-    if ([self.xmppStream isSecure]) {
-        return NO;
-    }
+    //FIXME: if do this condition, then can't compression on SSL/TLS.
+//    if ([self.xmppStream isSecure]) {
+//        return NO;
+//    }
     if (XMPPCompressionStateRequestingCompress == self.compressionState) {
         if([[element name] isEqualToString:@"compressed"]) {
             self.compressionState = XMPPCompressionStateCompressing;

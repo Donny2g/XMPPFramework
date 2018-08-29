@@ -5123,6 +5123,11 @@ enum XMPPStreamConfig
     }];
 }
 
+- (void)readDataWithTimeout:(NSTimeInterval)timeout tag:(long)tag
+{
+	[asyncSocket readDataWithTimeout:timeout tag:tag];
+}
+
 // Feature support
 - (void)addFeature:(XMPPFeature *)feature
 {
